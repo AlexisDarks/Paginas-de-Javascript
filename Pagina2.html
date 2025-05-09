@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff0f5;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+    h1 {
+      color: #444;
+    }
+    .boton {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .boton:hover {
+      background-color: #007bb5;
+    }
+  </style>
+</head>
+<body>
+  <h1>página 2 xd</h1>
+  <button class="boton" id="volverPagina1">Volver a Página 1</button>
+
+  <script>
+    document.getElementById("volverPagina1").addEventListener("click", function () {
+      document.body.style.opacity = 0;
+      setTimeout(() => {
+        window.location.href = "pagina1.html";
+      }, 500); 
+    });
+  </script>
+</body>
+</html>
